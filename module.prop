@@ -1,7 +1,6 @@
 id=systemless-fcm-hosts
 name=Systemless FCM Hosts - Unified
-version=17.0.20250526
-versionCode=20250526
-author=Goooler
+version=17.0.20250907,ak
+versionCode=20250907
+author=Goooler,ak
 description=A Magisk module integrated with FCM hosts for Chinese users
-updateJson=https://raw.githubusercontent.com/Goooler/systemless-fcm-hosts/master/module.json
