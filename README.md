@@ -30,7 +30,7 @@ QAs:
 - 1.没连接上fcm：刷我的模块，然后将mtalk.google.com加入直连名单
 或者开允许应用绕过，fcm自动绕过vpn
 
-- 2.Failed to broadcast to stopped app com.tencent.mm (priority=HIGH)：装fcmfix：https://modules.lsposed.org/module/com.kooritea.fcmfix/
+- 2.Failed to broadcast to stopped app com.tencent.mm (priority=HIGH)：装[fcmfix](https://modules.lsposed.org/module/com.kooritea.fcmfix/)
 并勾选相关应用
 
 - 针对微信：
@@ -41,7 +41,7 @@ QAs:
 
 - 番外篇：
 其实99%CN ROM用户自己安装的GMS是阉割版，功能有缺失，例如不能使用查找手机，Google quick share，当然FCM也是阉割了的😁
-可能的解决方法（我没试过因为我从来不用CN ROM，但我朋友试了一下好像有用）：刷入Unlock CN GMS模块 https://github.com/fei-ke/unlock-cn-gms
+可能的解决方法（我没试过因为我从来不用CN ROM，但我朋友试了一下好像有用）：刷入[Unlock CN GMS模块](https://github.com/fei-ke/unlock-cn-gms)
 
 祝你早日用上满血fcm push，ins美女开播第一时间收到通知😃
 
