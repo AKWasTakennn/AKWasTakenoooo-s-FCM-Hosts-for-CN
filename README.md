@@ -1,5 +1,7 @@
 AKWasTakenoooo's FCM Hosts for CN
 ====================
+Telegram Channel:
+https://t.me/akwastakenoooo
 
 Overview:
 ---------
