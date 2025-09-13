@@ -1,3 +1,4 @@
+# Google fcm main server -ISP DNS (China Mobile/China Unicom/China Telecom)
 2404:6800:4008:c07::bc mtalk.google.com
 2404:6800:4008:c1b::bc mtalk.google.com
 2404:6800:4008:c15::bc mtalk.google.com
@@ -5,20 +6,24 @@
 2404:6800:4008:c19::bc mtalk.google.com
 2404:6800:4008:c01::bc mtalk.google.com
 2607:f8b0:4023:1c05::bc mtalk.google.com
-
+2607:f8b0:400e:c09::bc mtalk.google.com
 142.250.107.188 mtalk.google.com
 142.251.170.188 mtalk.google.com
 108.177.125.188 mtalk.google.com
+142.251.10.188 mtalk.google.com
+64.233.186.188 mtalk.google.com
+74.125.206.188 mtalk.google.com
 
+# Google fcm backup server -ISP DNS (China Mobile/China Unicom/China Telecom)
 
+2607:f8b0:4023:1c05::bc alt1-mtalk.google.com
+2a00:1450:400b:c02::bc alt1-mtalk.google.com
 
+2607:f8b0:4023:2009::bc alt3-mtalk.google.com
+2607:f8b0:4023:100f::bc alt3-mtalk.google.com
 
+2607:f8b0:4003:c0a::bc alt5-mtalk.google.com
+2a00:1450:4025:c01::bc alt5-mtalk.google.com
 
-108.177.125.188 alt1-mtalk.google.com
-142.251.170.188 alt2-mtalk.google.com
-142.251.12.188 alt3-mtalk.google.com
-142.251.10.188 alt4-mtalk.google.com
-74.125.200.188 alt5-mtalk.google.com
-142.250.115.188 alt6-mtalk.google.com
-142.250.152.188 alt7-mtalk.google.com
-192.178.131.188 alt8-mtalk.google.com
+2607:f8b0:4024:c0d::bc alt7-mtalk.google.com
+2404:6800:4003:c06::bc alt7-mtalk.google.com
