@@ -3,7 +3,7 @@ AKWasTakenoooo's FCM Hosts for CN
 
 Overview:
 ---------
-
+- 因为原作者更新此模块频率低，IP地址几乎失效，故fork此项目已进行维护
 - A Magisk module integrated with FCM hosts for Chinese users
 - Support Magisk / KernelSU / APatch root implementations.
 
