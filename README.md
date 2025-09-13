@@ -18,7 +18,7 @@ QAs:
 ----
 
 - fcm推送常见问题(特别是针对微信)：
-首先确保使用的不是jingmatrix的lsposed，可以换成： @lsp_leaks 或 @lsposed_irena
+首先确保使用的不是jingmatrix的lsposed，可以换成： [@lsp_leaks](t.me/lsp_leaks)或 [@lsposed_irena](t.me/lsposed_irena)
 
 - 打开fcm diagnostics：
 打开Android 设备的FCM Diagnostics 页面，请在拨号盘中输入代码 *#*#426#*#*，然后点击呼叫按钮。也可以使用 adb 命令 adb shell am start -n com.google.android.gms/.gcm.GcmDiagnostics 来打开该诊断页面。﻿
@@ -27,10 +27,10 @@ QAs:
 0.CN版本ROM：例如ColorOS/RealmeUI，MIUI/HyperOS_CN，OneUI_CN等等，请自行替换电池软件为国际版（大部分系统默认在连不上Google的情况下就算有完整的GMS也会掐断FCM push），微信电池设置为优化，并移除微信电池白名单（方法自行寻找，我用类AOSP，不存在这个问题）
 最好的办法就是刷成国际版ROM，还没广告😀
 
-1.没连接上fcm：刷我的模块，然后将mtalk.google.com加入直连名单
+- 1.没连接上fcm：刷我的模块，然后将mtalk.google.com加入直连名单
 或者开允许应用绕过，fcm自动绕过vpn
 
-2.Failed to broadcast to stopped app com.tencent.mm (priority=HIGH)：装fcmfix：https://modules.lsposed.org/module/com.kooritea.fcmfix/
+- 2.Failed to broadcast to stopped app com.tencent.mm (priority=HIGH)：装fcmfix：https://modules.lsposed.org/module/com.kooritea.fcmfix/
 并勾选相关应用
 
 - 针对微信：
