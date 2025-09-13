@@ -4,8 +4,7 @@ Systemless FCM Hosts
 Overview:
 ---------
 
-- A Magisk module integrated with FCM hosts for Chinese users, packed
-  from [fcm-hosts](https://github.com/entr0pia/fcm-hosts).
+- A Magisk module integrated with FCM hosts for Chinese users
 - Support Magisk / KernelSU / APatch root implementations.
 
 Credits:
