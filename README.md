@@ -34,6 +34,7 @@ QAs:
 
 - 2.Failed to broadcast to stopped app com.tencent.mm (priority=HIGH)：装[fcmfix](https://modules.lsposed.org/module/com.kooritea.fcmfix/)
 并勾选相关应用
+请点击我这里下载[最新版本fcmfix](https://modules.lsposed.org/module/com.kooritea.fcmfix/)，别去lsposed仓库下载，那个版本很老
 
 - 针对微信：
 请使用Google play版本wechat，打开微信设置内退出登录，然后把微信强行停止下，接着开vpn全局再打开微信重新登录后测试消息应该会有日志
@@ -41,13 +42,31 @@ QAs:
 - 鉴定微信是否由fcm推送：
 消息带有头像是微信自己推送的，没有头像是fcm push，有时候fcm push也会存在有头像的情况：第一条通知来了fcm叫醒微信，微信醒了推送了通知但还没有被kill或者进缓存时候有第二条消息，第二条消息就会走微信的推送
 
+- 鉴定是否成功注册fcm：
+找微信团队发“1”，fcm会有日志，没有日志发完就关掉微信
+
 - 番外篇：
 其实99%CN ROM用户自己安装的GMS是阉割版，功能有缺失，例如不能使用查找手机，Google quick share，当然FCM也是阉割了的😁
 可能的解决方法（我没试过因为我从来不用CN ROM，但我朋友试了一下好像有用）：刷入[Unlock CN GMS模块](https://github.com/fei-ke/unlock-cn-gms)
 
-祝你早日用上满血fcm push，ins美女开播第一时间收到通知😃
+- 关于模块冲突问题：
+与hosts去广告模块冲突
+解决办法：
+mt打开去广告模块，将频道里的规则添加进你的模块里面，有一个文件叫hosts，就是这个文件，加到最后面去，例如：
 
-推广可爱韩国🇰🇷coser：
+***************
+***************
+
+修改完就是：
+
+***************
+***************
+0.0.0.0 mtalk.google.com
+（举例）
+
+- 祝你早日用上满血fcm push，ins美女开播第一时间收到通知😃
+
+- 推广可爱韩国🇰🇷coser：
 https://www.instagram.com/yasal_170/
 https://x.com/Yasal_170
 https://space.bilibili.com/3546937055775240
