@@ -52,17 +52,7 @@ QAs:
 - 关于模块冲突问题：
 与hosts去广告模块冲突
 解决办法：
-mt打开去广告模块，将频道里的规则添加进你的模块里面，有一个文件叫hosts，就是这个文件，加到最后面去，例如：
-
-###
-###
-
-修改完就是：
-
-###
-###
-0.0.0.0 mtalk.google.com
-（举例）
+mt打开去广告模块，将频道里的规则添加进你的模块里面，有一个文件叫hosts，就是这个文件，加到最后面去
 
 - 祝你早日用上满血fcm push，ins美女开播第一时间收到通知😃
 
@@ -71,7 +61,9 @@ https://www.instagram.com/yasal_170/
 https://x.com/Yasal_170
 https://space.bilibili.com/3546937055775240
 
-- 规则：
+## hosts方案/规则
+
+```
 # Google fcm main server -ISP DNS (China Mobile/China Unicom/China Telecom)
 2404:6800:4008:c07::bc mtalk.google.com
 2404:6800:4008:c1b::bc mtalk.google.com
@@ -101,7 +93,7 @@ https://space.bilibili.com/3546937055775240
 
 2607:f8b0:4024:c0d::bc alt7-mtalk.google.com
 2404:6800:4003:c06::bc alt7-mtalk.google.com
-
+```
 - Q&A:
 
 Q:微信注册不上FCM
