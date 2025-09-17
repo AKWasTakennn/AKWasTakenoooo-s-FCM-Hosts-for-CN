@@ -54,13 +54,13 @@ QAs:
 解决办法：
 mt打开去广告模块，将频道里的规则添加进你的模块里面，有一个文件叫hosts，就是这个文件，加到最后面去，例如：
 
-***************
-***************
+###
+###
 
 修改完就是：
 
-***************
-***************
+###
+###
 0.0.0.0 mtalk.google.com
 （举例）
 
@@ -70,3 +70,52 @@ mt打开去广告模块，将频道里的规则添加进你的模块里面，有
 https://www.instagram.com/yasal_170/
 https://x.com/Yasal_170
 https://space.bilibili.com/3546937055775240
+
+- 规则：
+# Google fcm main server -ISP DNS (China Mobile/China Unicom/China Telecom)
+2404:6800:4008:c07::bc mtalk.google.com
+2404:6800:4008:c1b::bc mtalk.google.com
+2404:6800:4008:c15::bc mtalk.google.com
+2404:6800:4008:c05::bc mtalk.google.com
+2404:6800:4008:c19::bc mtalk.google.com
+2404:6800:4008:c01::bc mtalk.google.com
+2607:f8b0:4023:1c05::bc mtalk.google.com
+2607:f8b0:400e:c09::bc mtalk.google.com
+142.250.107.188 mtalk.google.com
+142.251.170.188 mtalk.google.com
+108.177.125.188 mtalk.google.com
+142.251.10.188 mtalk.google.com
+64.233.186.188 mtalk.google.com
+74.125.206.188 mtalk.google.com
+
+# Google fcm backup server -ISP DNS (China Mobile/China Unicom/China Telecom)
+
+2607:f8b0:4023:1c05::bc alt1-mtalk.google.com
+2a00:1450:400b:c02::bc alt1-mtalk.google.com
+
+2607:f8b0:4023:2009::bc alt3-mtalk.google.com
+2607:f8b0:4023:100f::bc alt3-mtalk.google.com
+
+2607:f8b0:4003:c0a::bc alt5-mtalk.google.com
+2a00:1450:4025:c01::bc alt5-mtalk.google.com
+
+2607:f8b0:4024:c0d::bc alt7-mtalk.google.com
+2404:6800:4003:c06::bc alt7-mtalk.google.com
+
+- Q&A:
+
+Q:微信注册不上FCM
+A:注册不上我也没办法，正常来说微信通过境外网络连接重新登录的时候自动注册FCM
+
+Q:微信在收到FCM推送后会被唤醒
+A:FCM就是这样的，不然呢
+
+Q:FCM推送和微信线程推送哪个省电？
+A:这还用问，微信代码有多少地方是按标准来优化的，一个微信push线程顶一个GMS，而且国产手机还有自己的消息推送系统，不用FCM直接加一倍耗电量（微信+GMS+CN消息推送系统）
+
+Q:用了我的模块FCM还是不稳定
+A:运营商问题
+
+Q:国际版电量与性能去那下载？
+A:可靠方案是国际版本rom提取但麻烦
+
